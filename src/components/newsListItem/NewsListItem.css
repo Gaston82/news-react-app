@@ -32,6 +32,7 @@
     padding: 0 1rem;
   }
   .card__link{
+    text-decoration: none;
     text-align: center;
     padding:1rem;
     font-family:inherit;

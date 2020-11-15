@@ -34,8 +34,3 @@ function App() {
 }
 
 export default App;
-
-/*
-            <Route exact path="/detail/:title" component={Detail} />
-
-*/
