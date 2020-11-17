@@ -18,7 +18,7 @@ export const useFetch = (countries, category) => {
       });
     };
     articles();
-  }, []);
+  }, [countries, category]);
 
   return state;
 };

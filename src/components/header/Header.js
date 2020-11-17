@@ -1,14 +1,15 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Form } from "../form/Form";
-import { Search } from "../search/Search";
 import { Link } from "react-router-dom";
-import { CountryContext } from "../../context/CountryContext";
 
 import "./Header.css";
 
 export const Header = () => {
-  const { countries } = useContext(CountryContext);
+  /*
+import { CountryContext } from "../../context/CountryContext";
 
+  const { countries } = useContext(CountryContext);
+  
   let result = "";
   if (countries === "au") {
     result = "Australia";
@@ -21,6 +22,7 @@ export const Header = () => {
   } else {
     result = "Mexico";
   }
+  */
 
   return (
     <>

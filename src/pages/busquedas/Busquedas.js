@@ -2,13 +2,16 @@ import React from "react";
 import { Header } from "../../components/header/Header";
 
 export const Busquedas = () => {
+  const handleInputChange = (e) => {
+    console.log("hello");
+  };
   return (
     <>
       <Header />
       <h1>Esta es la página de búsquedas</h1>
       <form>
         <label>Titulo o contenido</label>
-        <input type="text"></input>
+        <input type="text" onChange={handleInputChange}></input>
         <label>Desde</label>
         <input type="date"></input>
         <label>Hasta</label>
