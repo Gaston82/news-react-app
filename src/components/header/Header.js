@@ -5,25 +5,6 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 
 export const Header = () => {
-  /*
-import { CountryContext } from "../../context/CountryContext";
-
-  const { countries } = useContext(CountryContext);
-  
-  let result = "";
-  if (countries === "au") {
-    result = "Australia";
-  } else if (countries === "ar") {
-    result = "Argentina";
-  } else if (countries === "us") {
-    result = "Estados Unidos";
-  } else if (countries === "br") {
-    result = "Brasil";
-  } else {
-    result = "Mexico";
-  }
-  */
-
   return (
     <>
       <header className="header">
@@ -38,7 +19,7 @@ import { CountryContext } from "../../context/CountryContext";
               <Link to="sports">SPORTS</Link>
             </li>
             <li>
-              <Link to="busquedas">BÚSQUEDAS</Link>
+              <Link to="busquedas">SEARCH</Link>
             </li>
             <li>
               <Link to="entertainment">ENTERTAINMENT</Link>

@@ -3,6 +3,7 @@ export const fetchNews = async (country, category) => {
   const response = await fetch(url).then();
   const data = await response.json();
   console.log(data);
+
   const content = data.articles.map((article) => {
     return {
       title: article.title,

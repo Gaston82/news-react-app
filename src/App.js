@@ -12,7 +12,7 @@ import { Sports } from "./pages/sports/Sports";
 import { Entertainment } from "./pages/entertainment/Entertainment";
 import { Science } from "./pages/science/Science";
 import CountriesProvider from "./context/CountryContext";
-import { Busquedas } from "./pages/busquedas/Busquedas";
+import { Search } from "./pages/search/Search";
 
 function App() {
   return (
@@ -24,8 +24,8 @@ function App() {
             <Route path="/sports" component={Sports} />
             <Route path="/entertainment" component={Entertainment} />
             <Route path="/science" component={Science} />
-            <Route path="/busquedas" component={Busquedas} />
             <Redirect to="/" />
+            <Route path="/search" component={Search} />
           </Switch>
         </div>
       </Router>
