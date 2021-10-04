@@ -1,7 +1,7 @@
 ## News React App
 
-It is a simple app where You can search news around the world.
-There are different topics like sports, science and entertainment and also You can choose between some avaibles languages.
+It is a simple app where you can search news around the world.
+There are different topics like sports, science and entertainment and also you can choose between some avaible languages.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
