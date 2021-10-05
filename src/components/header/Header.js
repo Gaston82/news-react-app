@@ -1,6 +1,7 @@
 import React from "react";
 import { Form } from "../form/Form";
 import { Link } from "react-router-dom";
+import * as ROUTES from "../../constants/routes";
 
 import "./Header.css";
 
@@ -13,16 +14,16 @@ export const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link to="science">SCIENCE</Link>
+              <Link to={ROUTES.SCIENCE}>SCIENCE</Link>
             </li>
             <li>
-              <Link to="sports">SPORTS</Link>
+              <Link to={ROUTES.SPORTS}>SPORTS</Link>
             </li>
             <li>
-              <Link to="busquedas">SEARCH</Link>
+              <Link to={ROUTES.SEARCH}>SEARCH</Link>
             </li>
             <li>
-              <Link to="entertainment">ENTERTAINMENT</Link>
+              <Link to={ROUTES.ENTERTAINMENT}>ENTERTAINMENT</Link>
             </li>
             <li>
               <Form></Form>
@@ -36,55 +37,3 @@ export const Header = () => {
     </>
   );
 };
-/*
- <li className="nav-list__item">
-              <button className="header__btn">INGRESAR</button>
-            </li>
-
-
-  
-        <nav className="header-nav">
-          <ul className="nav-list">
-            <li className="nav-list__item">
-              <Link className="nav-list__link" to="/">
-                HOME
-              </Link>
-            </li>
-            <li className="nav-list__item">
-              <Link className="nav-list__link" to="sports">
-                SPORTS
-              </Link>
-            </li>
-            <li className="nav-list__item">
-              <Link className="nav-list__link" to="Science">
-                SCIENCE
-              </Link>
-            </li>
-            <li className="nav-list__item">
-              <Link className="nav-list__link" to="Entertainment">
-                ENTERTAINMENT
-              </Link>
-            </li>
-            <li className="nav-list__item">
-              <Link className="nav-list__link" to="Busquedas">
-                BÚSQUEDAS
-              </Link>
-            </li>
-            <li className="nav-list__item">
-              <Form />
-            </li>
-          </ul>
-        </nav>
-        <div className="header__logo">
-          <img
-            className="header__logo-img"
-            src="https://www.pagina12.com.ar/assets/media/logos/logo_pagina_12_n.svg?v=1.0.234"
-            alt=""
-          />
-        </div>
-        <h1 className="header__title">{result}</h1>
-
-
-
-
-*/
