@@ -5,6 +5,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import * as ROUTES from "./constants/routes";
 import { Home } from "./pages/home/Home";
 import { Sports } from "./pages/sports/Sports";
 import { Entertainment } from "./pages/entertainment/Entertainment";
@@ -18,12 +19,12 @@ function App() {
       <Router>
         <div>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/sports" component={Sports} />
-            <Route path="/entertainment" component={Entertainment} />
-            <Route path="/science" component={Science} />
+            <Route exact path={ROUTES.HOME} component={Home} />
+            <Route path={ROUTES.SPORTS} component={Sports} />
+            <Route path={ROUTES.ENTERTAINMENT} component={Entertainment} />
+            <Route path={ROUTES.SCIENCE} component={Science} />
             <Redirect to="/" />
-            <Route path="/search" component={Search} />
+            <Route path={ROUTES.SEARCH} component={Search} />
           </Switch>
         </div>
       </Router>
