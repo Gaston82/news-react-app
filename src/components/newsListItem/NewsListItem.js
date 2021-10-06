@@ -24,9 +24,9 @@ export const NewsListItem = ({ news }) => {
           <h2 className="card__title">{title}</h2>
           <p className="card__description">{description}</p>
         </div>
-        <a className="card__link" href={detail} target="blank">
+        <Link className="card__link" to={detail} target="blank">
           Ver más...
-        </a>
+        </Link>
       </div>
     </>
   );
