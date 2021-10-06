@@ -25,30 +25,9 @@ export const NewsListItem = ({ news }) => {
           <p className="card__description">{description}</p>
         </div>
         <Link className="card__link" to={detail} target="blank">
-          Ver más...
+          View more...
         </Link>
       </div>
     </>
   );
 };
-/* <div className="card-article__content">
-        <h2 className="card-article__title"> {title}</h2>
-        <p className="card-article__desc">{description}...</p>
-      </div>
-      <a className="card-article__link" href={detail} target="blank">
-        Ver más...
-      </a> 
-      {url ? (
-        <Link to={`./detail/${receivedArticleName}`}>
-          <img className="card__img" src={url} alt=""></img>
-        </Link>
-      ) : (
-        <img
-          className="card-article__img"
-          src="https://www.sogarca.com/wp-content/uploads/2015/06/No-disponible.jpg"
-          alt=""
-        ></img>
-      )}
-      
-      
-      */
