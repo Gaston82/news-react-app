@@ -12,5 +12,5 @@ export const fetchNews = async (country, category) => {
       detail: article.url,
     };
   });
-  return content;
+  return content.filter((item) => item.url !== null);
 };
