@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <>
       <header className="header">
-        <h1 className="logo">News React App</h1>
+        <h1 className="logo">NEWS React App</h1>
         <input type="checkbox" id="nav-toggle" className="nav-toggle" />
         <nav>
           <ul>
