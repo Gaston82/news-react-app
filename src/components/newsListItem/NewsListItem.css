@@ -1,29 +1,32 @@
 :root{
     --radius:0.2rem;
-    --clr-primary:#d50000;
-    --clr-primary-dark:#039d69;
-    --clr-primary-hover:#29e6a7;
+    --clr-primary:royalblue;
+    --clr-primary-dark:black;
+    --clr-primary-hover:grey;
     --clr-gray100:#f0f7f8;
-    --clr-gray200:#cfd8dc;
+    --clr-blue:royalblue;
      
       
   }
 
   .card{
     overflow:hidden;
-    box-shadow: 0px 2px 20px var(--clr-gray200);
+    box-shadow: 0px 2px 20px var(--clr-blue);
     border-radius:var(--radius);
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     cursor:pointer;
     transition:transform 200ms ease-in;
+  
     
   }
   .card__image{
     height:12rem;
     width:100%;
     object-fit:cover;
+  
+   
   }
   .card__title{
     padding:1rem;
@@ -40,9 +43,9 @@
     font-size:1rem;
     margin:1rem;
     background:transparent;
-    border:2px solid var(--clr-primary);
+    border:2px solid var(--clr-primary-dark);
     border-radius:var(--radius);
-    color:var(--clr-primary);
+    color:var(white);
     transition:background 200ms easy-in,
       color 200ms easy-in;
       
