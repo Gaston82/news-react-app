@@ -54,7 +54,7 @@
 }
 */
 .header{
-    background-color: teal;
+    background-color: whitesmoke;
     text-align: center;
     position: sticky;
     padding: 10px;
@@ -62,7 +62,7 @@
     z-index: 2;
 }
 nav{
-    background-color: teal;
+    background-color: whitesmoke;
     display: none;
     position: absolute;
     text-align: left;
@@ -123,7 +123,7 @@ nav a{
     text-transform: uppercase;
 }
 nav a:hover{
-    color: white;
+    color: red;
 }
 .nav-toggle:checked ~ nav{
     display: block;
@@ -138,6 +138,11 @@ nav a:hover{
     }
     .logo{
         grid-column: 2/3;
+        color:royalblue;
+        border-style:double;
+        border-color: black;
+       
+    
     }
     nav{
         all: unset;
@@ -145,6 +150,7 @@ nav a:hover{
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        
     }
     nav a{
         opacity: 1;
@@ -154,7 +160,7 @@ nav a:hover{
         content: '';
         display: block;
         height: 5px;
-        background: black;
+        background: royalblue;
         position: absolute;
         top: -0.75em;
         left: 0;
@@ -173,8 +179,7 @@ nav a:hover{
         margin-bottom: 0;
     }
 
-
-
+   
 
 
 
