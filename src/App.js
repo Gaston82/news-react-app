@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import * as ROUTES from "./constants/routes";
 import { Home } from "./pages/home/Home";
 import { Sports } from "./pages/sports/Sports";
@@ -23,7 +18,6 @@ function App() {
             <Route path={ROUTES.SPORTS} component={Sports} />
             <Route path={ROUTES.ENTERTAINMENT} component={Entertainment} />
             <Route path={ROUTES.SCIENCE} component={Science} />
-            <Redirect to="/" />
             <Route path={ROUTES.SEARCH} component={Search} />
           </Switch>
         </div>

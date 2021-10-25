@@ -1,60 +1,67 @@
 import React from "react";
+import "./SearchForm.css";
 
-const SearchForm = ({ search, setSearch, setResult }) => {
+const SearchForm = ({ search, onSearchFieldsChange, onSubmit }) => {
   const { title, from, to, language } = search;
 
-  const handleInputChange = (e) => {
-    setSearch({
-      ...search,
-      [e.target.name]: e.target.value,
-    });
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    setResult(true);
-  };
-
   return (
-    <div className="form-container">
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Title or content</label>
-          <input
-            type="text"
-            name="title"
-            onChange={handleInputChange}
-            value={title}
-          ></input>
-        </div>
-        <div>
-          <label htmlFor="from">From</label>
-          <input
-            type="date"
-            name="from"
-            value={from}
-            onChange={handleInputChange}
-          ></input>
-        </div>
-        <div>
-          <label htmlFor="to">to</label>
-          <input
-            type="date"
-            name="to"
-            value={to}
-            onChange={handleInputChange}
-          ></input>
-        </div>
-
-        <select onChange={handleInputChange}>
-          <option htmlFor={language}>Language</option>
-          <option value="ar">SPANISH</option>
-          <option value="de">ENGLISH</option>
+    <form onSubmit={onSubmit} className="form-container">
+      <div className="form-field">
+        <label className="form-label">Title or content:</label>
+        <input
+          className="form-input"
+          type="text"
+          name="title"
+          onChange={onSearchFieldsChange}
+          value={title}
+          required
+        />
+      </div>
+      <div className="form-field">
+        <label className="form-label" htmlFor="from">
+          From:
+        </label>
+        <input
+          className="form-input"
+          type="date"
+          name="from"
+          value={from}
+          onChange={onSearchFieldsChange}
+          required
+        />
+      </div>
+      <div className="form-field">
+        <label className="form-label" htmlFor="to">
+          To:
+        </label>
+        <input
+          className="form-input"
+          type="date"
+          name="to"
+          value={to}
+          onChange={onSearchFieldsChange}
+          required
+        />
+      </div>
+      <div className="form-field">
+        <label className="form-label" htmlFor="to">
+          Language:
+        </label>
+        <select
+          onChange={onSearchFieldsChange}
+          name="language"
+          className="form-input"
+        >
+          <option htmlFor={language}>Choose one...</option>
+          <option value="es">SPANISH</option>
+          <option value="en">ENGLISH</option>
           <option value="fr">FRENCH</option>
         </select>
-        <input type="submit" value="Search"></input>
-      </form>
-    </div>
+      </div>
+      <button type="submit" className="form-button">
+        Search
+      </button>
+    </form>
   );
 };
 
